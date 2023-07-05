@@ -25,5 +25,12 @@ public class Aula07ArraysMultidimensionais {
 
             }
         }
+        System.out.println("-------------------------------------");
+        // forEach
+        for (int[] arrBase: days){
+            for (int num: arrBase){
+                System.out.println(num);
+            }
+        }
     }
 }
