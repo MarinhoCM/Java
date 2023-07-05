@@ -19,5 +19,6 @@ public class Aula07Arrays1 {
         System.out.println(ages[0]); // 21;
         System.out.println(ages[1]); // 15;
         System.out.println(ages[2]); // 11;
+        // arrays em Java são considerados objetos;
     }
 }
