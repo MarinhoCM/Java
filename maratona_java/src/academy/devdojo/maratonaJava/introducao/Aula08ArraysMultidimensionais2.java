@@ -1,6 +1,6 @@
 package academy.devdojo.maratonaJava.introducao;
 
-public class Aula07ArraysMultidimensionais2 {
+public class Aula08ArraysMultidimensionais2 {
     public static void main(String[] args) {
 //        int[][] arrayInt = new int[2][];
 //        for (int[] arrBase: arrayInt){
