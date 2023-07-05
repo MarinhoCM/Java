@@ -1,5 +1,4 @@
 package academy.devdojo.maratonaJava.introducao;
-
 public class Aula07Arrays2Iter {
     public static void main(String[] args) {
         // byte, short, int, float e double = 0;
