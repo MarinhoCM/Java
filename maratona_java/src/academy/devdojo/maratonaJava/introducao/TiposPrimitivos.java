@@ -1,7 +1,5 @@
 package academy.devdojo.maratonaJava.introducao;
 
-import java.util.Arrays;
-
 public class TiposPrimitivos {
     public static void main(String[] args) {
         // int, double, float, char, byte, short, long, boolean

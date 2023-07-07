@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37d51243-42cd-4ecd-ae41-609af9ac426f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/academy/devdojo/maratonaJava/introducao/Aula6EstruturaDeRepeticao5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Projects/HelloWorld" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +71,7 @@
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.sourceCode",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "settings.editor.splitter.proportion": "0.15764582",
     "vue.rearranger.settings.migration": "true"
   }
@@ -82,7 +81,7 @@
       <recent name="C:\Users\marin\OneDrive\Área de Trabalho\Github\Java\maratona_java\src\academy\devdojo\maratonaJava\introducao" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Aula07Arrays2Iter">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Aula03Exercicio" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="academy.devdojo.maratonaJava.introducao.Aula03Exercicio" />
       <module name="maratona_java" />
@@ -189,6 +188,9 @@
       <workItem from="1688520037085" duration="137000" />
       <workItem from="1688520202205" duration="451000" />
       <workItem from="1688521946147" duration="3198000" />
+      <workItem from="1688570172171" duration="274000" />
+      <workItem from="1688570488928" duration="333000" />
+      <workItem from="1688688198746" duration="497000" />
     </task>
     <servers />
   </component>

@@ -65,12 +65,12 @@ public class Aula5EstruturasCondicionais05 {
                 System.out.println("Opção invalida!");
                 break;
         }
-        char sexo = "M";
+        char sexo = 'M';
         switch (sexo){
-            case "M":
+            case 'M':
                 System.out.println("Homen");
                 break;
-            case "F":
+            case 'F':
                 System.out.println("Mulher");
                 break;
             default:
