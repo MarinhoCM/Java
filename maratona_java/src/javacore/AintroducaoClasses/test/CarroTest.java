@@ -23,6 +23,17 @@ public class CarroTest {
         System.out.println(carro4x4.nome);
         System.out.println(carro4x4.modelo);
         System.out.println(carro4x4.ano);
-
+        System.out.println("-------------------------------->");
+        System.out.println("Carro01 = Carro02");
+        carroSedan = carro4x4;
+        System.out.println("Carro01 ---->");
+        System.out.println(carroSedan.nome);
+        System.out.println(carroSedan.modelo);
+        System.out.println(carroSedan.ano);
+        System.out.println("--------------------------->");
+        System.out.println("Carro02 ---->");
+        System.out.println(carro4x4.nome);
+        System.out.println(carro4x4.modelo);
+        System.out.println(carro4x4.ano);
     }
 }
