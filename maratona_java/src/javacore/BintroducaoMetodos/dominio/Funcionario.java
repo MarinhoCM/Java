@@ -3,18 +3,21 @@ package javacore.BintroducaoMetodos.dominio;
 public class Funcionario {
     public String nome;
     public int idade;
-    public double[] salario;
+    public double[] salarios;
 
     public void imprime(){
         System.out.println(this.nome);
         System.out.println(this.idade);
-        System.out.println(this.salario);
-    }
-    public double mediaDosSalarios(double[] salario){
-        double media = 0;
-        for (double num: salario) {
-            media += num;
+        for (double salario: this.salarios) {
+            System.out.println(salario+ " ");
         }
-        return media / salario.length;
+    }
+    public void mediaDosSalarios(){
+        double media = 0;
+        for(double salario: this.salarios){
+            media += salario;
+        }
+        media /= salarios.length;
+        System.out.println("Media salarial "+ media);
     }
 }
