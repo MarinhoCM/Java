@@ -1,4 +1,4 @@
-package javacore.introducaoMetodos.dominio;
+package javacore.BintroducaoMetodos.dominio;
 
 public class Calculadora02 {
     public double soma(double num, double other_num){

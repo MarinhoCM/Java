@@ -1,13 +1,16 @@
-package javacore.introducaoMetodos.dominio;
+package javacore.BintroducaoMetodos.dominio;
 
 public class Calculadora {
     public void soma(int num, int num2){
+
         System.out.println(num + num2);
     }
     public void subtrair(int num, int num2){
+
         System.out.println(num - num2);
     }
     public void multiplicar(int num, int num2){
+
         System.out.println(num * num2);
     }
     public void dividir(int num, int num2){
