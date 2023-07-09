@@ -14,8 +14,10 @@ public class Funcionario {
     }
     public void mediaDosSalarios(){
         double media = 0;
-        for(double salario: this.salarios){
-            media += salario;
+        if (salarios != null) {
+            for (double salario : this.salarios) {
+                media += salario;
+            }
         }
         media /= salarios.length;
         System.out.println("Media salarial "+ media);
