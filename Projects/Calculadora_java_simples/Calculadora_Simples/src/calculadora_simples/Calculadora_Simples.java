@@ -3,52 +3,75 @@ package calculadora_simples;
 
 import java.util.Scanner;
 public class Calculadora_Simples {
-
     
     public static void main(String[] args) {
-        double n1, n2;
+        String ANSI_RESET = "\u001B[0m";
+        String ANSI_RED = "\u001B[31m";
+        String ANSI_YELLOW = "\u001B[33m";
+        String ANSI_GREEN = "\u001B[32m";
+
+        double number, number_two;
         int op;
-        double soma, subtracao, multiplicacao, divisao;
-        Scanner entrada = new Scanner(System.in);
-        
-         System.out.println("Informe o primeiro valor:");
-         n1 = entrada.nextDouble();
-         System.out.println("Informe o segundo valor:");
-         n2 = entrada.nextDouble();
-        
-         System.out.println("######SELECIONE UMA OPERAÇÃO######");
-         System.out.println("[1] - SOMAR");
-         System.out.println("[2] - SUBTRAIR");
-         System.out.println("[3] - MULTIPLICAR");
-         System.out.println("[4] - DIVIDIR");
-         System.out.println(">>>>>>>>>>>>>>>>>>>>Digite sua opção:");
-         op = entrada.nextInt();
-        
+        double sum, sub, mul, div;
+        Scanner in = new Scanner(System.in);
+        System.out.print(ANSI_GREEN+"Informe o primeiro valor: "+ANSI_RESET);
+        number = in.nextDouble();
+        System.out.print(ANSI_GREEN+"Informe o segundo valor: "+ANSI_RESET);
+        number_two = in.nextDouble();
+        System.out.println(ANSI_YELLOW+"######SELECIONE UMA OPERACAO######");
+        System.out.println("[1] - SOMAR");
+        System.out.println("[2] - SUBTRAIR");
+        System.out.println("[3] - MULTIPLICAR");
+        System.out.println("[4] - DIVIDIR");
+        System.out.println(">>>>>>>>>>>>>>>>>>>>Digite sua opção:"+ANSI_RESET);
+        op = in.nextInt();
         switch(op){ 
             case 1:
-                soma = n1+n2;
-                System.out.println("A sua soma é igual á:"+soma);
-                break;
+                if (number < 0 || number_two < 0){
+                    System.out.print(
+                        ANSI_RED+"Informe um número positivo"+ANSI_RED
+                    );
+                    break;
+                } else {
+                    sum = number+number_two;
+                    System.out.print(
+                        ANSI_GREEN+"A sua soma e igual a:"+ANSI_RESET+" "+sum
+                    );
+                    break;
+                }
             case 2:
-                subtracao = n1-n2;
-                System.out.println("A sua subtração é igual á:"+subtracao);
+                sub = number-number_two;
+                System.out.print(
+                    ANSI_GREEN+"A sua subtração e igual a:"+ANSI_RESET+" "+sub
+                );
                 break;
             case 3:
-                multiplicacao = n1*n2;
-                System.out.println("A sua multiplicação é igual á:"+multiplicacao);
+                mul = number*number_two;
+                System.out.print(
+                    ANSI_GREEN+"A sua multiplicação e igual a:"+ANSI_RESET+" "+mul
+                );
                 break;
             case 4:
-                if(n1<n2){
-                    System.out.println("Impossivel de realizar o calculo");
+                if (number == 0 || number_two == 0){
+                    System.out.print(
+                        ANSI_RED+"ZeroDivisionError"+ANSI_RESET
+                    );
+                    break;
+                }    
+                if(number<number_two){
+                    System.out.print(
+                        ANSI_RED+"Impossivel de realizar o calculo"+ANSI_RESET
+                    );
                 }
                 else{
-                    divisao = n1/n2;
-                    System.out.println("A sua divisão é igual á:"+divisao);
+                    div = number/number_two;
+                    System.out.print(
+                        ANSI_GREEN+"A sua divisão e igual a:"+ANSI_RESET+" "+div
+                    );
                 }
                 break;                     
-            
             default:   
-                System.out.println("Operação invalida!!!");       
+                System.out.println(ANSI_RED+"Operação invalida!!!"+ANSI_RESET);       
         }
     }
 }
